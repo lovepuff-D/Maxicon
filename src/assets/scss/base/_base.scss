@@ -11,12 +11,22 @@ html {
 body {
   position: relative;
   overflow-x: hidden;
+  background: $g-2;
+  height: 100%;
   
-  /*font-family: Syne, "san-serif", "serif";*/
+  @include font-setting;
+  @include text-regular;
+  @include r-16-mb;
+  font-family: Outfit, "san-serif", "serif";
+  color: $black;
   /*font-variant-numeric: lining-nums proportional-nums;*/
   
-  /*background: var(--white);
-  color: var(--black);*/
+  @media screen and (min-width: $tablet_media) {
+    @include r-16-tb;
+  }
+  @media screen and (min-width: $desktop_media) {
+    @include r-16-dp;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -27,7 +37,7 @@ body {
 ::-webkit-scrollbar-thumb {
   border-radius: 20px;
   border: 1px solid transparent;
-  background: var(--g-40);
+  background: $g-40;
 }
 
 // Helpers

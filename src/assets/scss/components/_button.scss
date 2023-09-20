@@ -1,0 +1,59 @@
+.btn {
+  padding: mobile(14) mobile(24);
+  border-radius: mobile(1000);
+  
+  @include b-16-mb;
+  
+  &_p_sm {
+	padding: mobile(10) mobile(18);
+  }
+}
+
+@media screen and (min-width: $tablet_media) {
+  .btn {
+	padding: tablet(20) tablet(32);
+	border-radius: tablet(1000);
+	
+	@include b-16-tb;
+	
+	&_p_sm {
+	  padding: tablet(10) tablet(18);
+	}
+  }
+}
+
+@media screen and (min-width: $desktop_media) {
+  .btn {
+	padding: desktop(20) desktop(32);
+	border-radius: desktop(1000);
+	
+	@include b-16-dp;
+	
+	&_p_sm {
+	  padding: desktop(10) desktop(18);
+	}
+  }
+}
+
+.btn_outline_blue {
+  border: mobile(1.5) solid $blue;
+  color: $blue;
+  
+  @media screen and (min-width: $tablet_media) {
+	border-width: tablet(1.5);
+  }
+  
+  @media screen and (min-width: $desktop_media) {
+	border-width: desktop(1.5);
+  }
+}
+
+.btn_blue {
+  background-color: $blue;
+  color: $white;
+}
+
+.btn_white {
+  background-color: $white;
+  color: $blue;
+}

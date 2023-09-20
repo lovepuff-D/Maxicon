@@ -1,0 +1,64 @@
+.subscribe-input {
+  display: flex;
+  gap: mobile(12);
+  
+  padding: mobile(5) mobile(5) mobile(5) mobile(16);
+  
+  background-color: rgba($white, 0.1);
+  
+  &, button {
+	border-radius: mobile(1000);
+  }
+  
+  input {
+	flex: 1;
+	color: $white;
+	
+	&::placeholder {
+	  color: rgba($white, 0.5);
+	}
+  }
+  
+  button {
+	padding: mobile(8) mobile(16);
+	background-color: $white;
+	
+	@include b-16-mb;
+  }
+}
+
+@media screen and (min-width: $tablet_media) {
+  .subscribe-input {
+	gap: tablet(24);
+	
+	padding: tablet(5) tablet(5) tablet(5) tablet(16);
+	
+	&, button {
+	  border-radius: tablet(1000);
+	}
+	
+	button {
+	  padding: tablet(8) tablet(18);
+	  
+	  @include b-16-tb;
+	}
+  }
+}
+
+@media screen and (min-width: $desktop_media) {
+  .subscribe-input {
+	gap: desktop(24);
+	
+	padding: desktop(5) desktop(5) desktop(5) desktop(16);
+	
+	&, button {
+	  border-radius: desktop(1000);
+	}
+	
+	button {
+	  padding: desktop(8) desktop(18);
+	  
+	  @include b-16-dp;
+	}
+  }
+}
