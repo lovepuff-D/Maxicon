@@ -114,11 +114,13 @@
 @mixin r-20-tb {
   font-size: tablet(20);
   line-height: tablet(30);
+  letter-spacing: normal;
 }
 
 @mixin r-20-dp {
   font-size: desktop(20);
   line-height: desktop(30);
+  letter-spacing: normal;
 }
 
 //
